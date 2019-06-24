@@ -48,6 +48,7 @@ description: A brief version of my CV.
 
  &nbsp;
 
+ * Software: Practice and Experience
  * Theoretical Computer Science
  * Information Sciences
  * Neural Computing & Applications (Internet)
@@ -70,6 +71,12 @@ description: A brief version of my CV.
 * Prolog
 * Delphi / Pascal
 * Objective-C and Swift for iOS programming
+
+<h3 class="year">Other skills</h3>
+&nbsp;
+* Big Data: Hadoop setup, YARN, etc;
+* MapReduce Programming;
+* Apache Spark;
 
 <h3 class="year">Relevant Links</h3>
 &nbsp;
