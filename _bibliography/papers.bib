@@ -1,6 +1,69 @@
 ---
 ---
 
+@article{JOURNAL_FRANKIE,
+ author = {Yuan, Lanqin and Pfahringer, Bernhard and Barddal, Jean Paul},
+ title = {Addressing Feature Drift in Data Streams Using Iterative Subset Selection},
+ journal = {SIGAPP Appl. Comput. Rev.},
+ issue_date = {March 2019},
+ volume = {19},
+ number = {1},
+ month = apr,
+ year = {2019},
+ issn = {1559-6915},
+ pages = {20--33},
+ numpages = {14},
+ url = {http://doi.acm.org/10.1145/3325061.3325063},
+ doi = {10.1145/3325061.3325063},
+ acmid = {3325063},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {backward feature elimination, concept drift, data stream mining, embedded feature selection, feature selection, iterative subset selection},
+ abstract = {Data streams are prone to various forms of concept drift over time including, for instance, changes to the relevance of features. This specific kind of drift is known as feature drift and requires techniques tailored not only to determine which features are the most important but also to take advantage of them. Feature selection has been studied and shown to improve classifier performance in standard batch data mining, yet it is mostly unexplored in data stream mining. This paper presents a novel method of feature subset selection specialized for dealing with the occurrence of feature drifts called Iterative Subset Selection (ISS), which splits the feature selection process into two stages by first ranking the features using some scoring function, and then iteratively selecting feature subsets using this ranking. This work further extends upon our prior work by exploring feeding information from the subset selection stage back into the ranking process. Applying our method to the Naïve Bayes and k-Nearest Neighbour classifier, we obtain compelling accuracy improvements when compared to existing works.}
+}
+
+@inproceedings{VHPRE,
+  author    = {Jean Paul Barddal},
+  title     = {Vertical and Horizontal Partitioning in Data Stream Regression Ensembles},
+  booktitle = {2019 International Joint Conference on Neural Networks, {IJCNN} 2019,
+               Budapest, Hungary, July 14-19, 2019},
+  year      = {2019},
+  abstract  = {Data stream mining is an emerging topic in machine learning that targets the creation and update of predictive models over time as new data becomes available. Regarding existing works, classification is the most widely tackled task, which leaves regression nearly untouched. In this paper, the focus relies on ensemble learning for data stream regression, more specifically on vertical and horizontal data partitioning techniques. The goal is to determine whether and under which conditions partitioning can lessen the error rates of different types of learners in the data stream regression task. The proposed method combines vertical and horizontal partitioning, and it is compared with and against different types of learners and existing ensembles.}
+}
+
+
+@inproceedings{REGULARIZED_HTS,
+  author    = {Jean Paul Barddal and Fabricio Enembreck},
+  title     = {Learning Regularized Hoeffding Trees from Data Streams},
+  booktitle = {Proceedings of the 34rd Annual {ACM} Symposium on Applied Computing,
+               {SAC} 2019, Limassol, Cyprus, April 08-12, 2019},
+  year      = {2019},
+  abstract = {Learning from data streams is a hot topic in machine learning that targets the learning and update of predictive models as data becomes available for both training and query. Due to their simplicity and convincing results in a multitude of applications, Hoeffding Trees are, by far, the most widely used family of methods for learning decision trees from streaming data. Despite the aforementioned positive characteristics, Hoeffding Trees tend to continuously grow in terms of nodes as new data becomes available, i.e., they eventually split on all features available, and multiple times on the same feature; thus leading to unnecessary complexity. With this behavior, Hoeffding Trees lose the ability to be human-understandable and computationally efficient. To tackle these issues, we propose a regularization scheme for Hoeffding Trees that (i) uses a penalty factor to control the gain obtained by creating a new split node using a feature that has not been used thus far; and (ii) uses information from previous splits in the current branch to determine whether the gain observed indeed justifies a new split. The proposed scheme is combined with both standard and adaptive variants of Hoeffding Trees. Experiments using real-world, stationary and drifting synthetic data show that the proposed method prevents both original and adaptive Hoeffding Trees from unnecessarily growing while maintaining impressive accuracy rates. As a byproduct of the regularization process, significant improvements in processing time, model complexity, and memory consumption have also been observed, thus showing the effectiveness of the proposed regularization scheme.}
+}
+
+@inproceedings{KARAX_TREE_FEATURE_IMPORTANCE,
+  author    = {Jean Antonio Karax, Andreia Malucelli, and Jean Paul Barddal},
+  title     = {Decision tree-based Feature Ranking in Concept Drifting Data Streams},
+  booktitle = {Proceedings of the 34rd Annual {ACM} Symposium on Applied Computing,
+               {SAC} 2019, Limassol, Cyprus, April 08-12, 2019},
+  year      = {2019},
+  abstract  = {Data stream mining targets the learning of predictive models that evolve over time according to changes in arriving data. Throughout the years, several approaches have been tailored to create and continuously update predictive models from these streams, and from these, Hoeffding Trees became a popular choice for learning decision trees from data streams. In this paper, we aim at quantifying and expressing the importance of features in dynamic scenarios is of the utmost importance as they allow domain experts to back up, or invalidate, a predictive model. Therefore, we propose and assess a positional gain method tailored for for both individual and ensembles of Hoeffding Trees and how these behave in both synthetic and real-world scenarios.}
+}
+
+@article{BARDDAL201913,
+title = "Boosting decision stumps for dynamic feature selection on data streams",
+journal = "Information Systems",
+volume = "83",
+pages = "13 - 29",
+year = "2019",
+issn = "0306-4379",
+doi = "https://doi.org/10.1016/j.is.2019.02.003",
+url = "http://www.sciencedirect.com/science/article/pii/S0306437918303399",
+author = "Jean Paul Barddal and Fabrício Enembreck and Heitor Murilo Gomes and Albert Bifet and Bernhard Pfahringer",
+keywords = "Data stream mining, Feature selection, Concept drift, Feature drift",
+abstract = "Feature selection targets the identification of which features of a dataset are relevant to the learning task. It is also widely known and used to improve computation times, reduce computation requirements, and to decrease the impact of the curse of dimensionality and enhancing the generalization rates of classifiers. In data streams, classifiers shall benefit from all the items above, but more importantly, from the fact that the relevant subset of features may drift over time. In this paper, we propose a novel dynamic feature selection method for data streams called Adaptive Boosting for Feature Selection (ABFS). ABFS chains decision stumps and drift detectors, and as a result, identifies which features are relevant to the learning task as the stream progresses with reasonable success. In addition to our proposed algorithm, we bring feature selection-specific metrics from batch learning to streaming scenarios. Next, we evaluate ABFS according to these metrics in both synthetic and real-world scenarios. As a result, ABFS improves the classification rates of different types of learners and eventually enhances computational resources usage."
+}
+
 @article{DBLP:journals/eswa/BarddalEGBP19,
   author    = {Jean Paul Barddal and
                Fabr{\'{\i}}cio Enembreck and
@@ -16,7 +79,8 @@
   doi       = {10.1016/j.eswa.2018.09.031},
   timestamp = {Fri, 02 Nov 2018 15:38:38 +0100},
   biburl    = {https://dblp.org/rec/bib/journals/eswa/BarddalEGBP19},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract = {Learning from ephemeral data streams has garnered the interest of both researchers and practitioners towards adaptive learning techniques. Despite the convincing results obtained thus far, most of the current research still overlooks that the relevance of features may change throughout the learning process. Scenarios where features become - or cease to be - relevant to the learning task are called feature drifting data streams, and the identification of which features are relevant becomes even more challenging when the feature space is high-dimensional. To select relevant features during the progress of data streams, we propose a merit-guided and classifier-independent dynamic feature selection algorithm named DynamIc SymmetriCal Uncertainty Selection for Streams (DISCUSS). We evaluate our proposal on both synthetic and real-world datasets and show that DISCUSS can boost kNN and Naive Bayes classifiers’ accuracy rates on high-dimensional data streams, while at the expense of limited processing time and memory space. Finally, the drawbacks of the proposed method are assessed, and possible future works on the topic are also discussed.}
 }
 
 @inproceedings{DBLP:conf/esann/GomesBFB18,
@@ -32,7 +96,8 @@
   url       = {http://www.elen.ucl.ac.be/Proceedings/esann/esannpdf/es2018-183.pdf},
   timestamp = {Fri, 09 Nov 2018 12:29:56 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/esann/GomesBFB18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data stream mining is a hot topic in the machine learning community that tackles the problem of learning and updating predictive models as new data becomes available over time. Even though several new methods are proposed every year, most focus on the classification task and overlook the regression task. In this paper, we propose an adaptation to the Adaptive Random Forest so that it can handle regression tasks, namely ARF-Reg. ARF-Reg is empirically evaluated and compared to the state-of-the-art data stream regression algorithms, thus highlighting its applicability in different data stream scenarios.}
 }
 
 @inproceedings{DBLP:conf/ijcnn/FerreiraBEG18,
@@ -51,7 +116,8 @@
   doi       = {10.1109/IJCNN.2018.8489290},
   timestamp = {Mon, 22 Oct 2018 13:07:32 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/ijcnn/FerreiraBEG18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {The financial market is one of the major consumers of data mining techniques, and the main reason is their efficiency to analyze complex data. One important trait shared between most financial applications is class imbalance. Since traditional classification methods assume nearly balanced classes and equal misclassification costs, they usually fail to deal with imbalanced data. However, in financial contexts, problems are usually imbalanced, and instances from the minority class are known for deficits of millions of dollars every year, e.g., credit card frauds, money laundering transactions and so forth. Over the years, several techniques for dealing with class imbalance have been developed, such as sampling techniques and algorithm adaptations. In this study, we analyze how different sampling techniques impact the performance of different classification systems on financial applications. Results show that, for the given datasets, sampling techniques allow the improvement of prediction performance of the minority class while also improving overall classification rates. Nevertheless, their use often deteriorates the performance in predicting the majority class.}
 }
 
 @inproceedings{DBLP:conf/indin/SearaMSB18,
@@ -70,7 +136,8 @@
   doi       = {10.1109/INDIN.2018.8471986},
   timestamp = {Fri, 12 Oct 2018 10:26:41 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/indin/SearaMSB18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Fintechs are technology companies that, in contrast to traditional banks, are engaged in digital solutions for payment, money transfers, and real-time notifications. Taking advantage of digital means of communication, most of the service interactions between fintechs and customers occurs via chats or posts in social media. In this work, our goal is to use machine learning to analyze these posts and identify what are the terms used by customers to express positive, neutral and negative customer experiences. During this analysis, we assess the following questions using data from the 3 biggest fintechs in Brazil: (i) what are the most commented topics on social media regarding fintechs, (ii) what are the words more often used by customers to express positive, negative and neutral reactions to the customer service obtained; and (iii) what kind of machine learning model should a fintech use to automatically identify whether a post is positive, negative or neutral.}
 }
 
 @inproceedings{DBLP:conf/sac/YuanPB18,
@@ -87,7 +154,8 @@
   doi       = {10.1145/3167132.3167188},
   timestamp = {Wed, 21 Nov 2018 12:43:56 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/sac/YuanPB18},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Feature selection has been studied and shown to improve classifier performance in standard batch data mining but is mostly unexplored in data stream mining. Feature selection becomes even more important when the relevant subset of features changes over time, as the underlying concept of a data stream drifts. This specific kind of drift is known as feature drift and requires specific techniques not only to determine which features are the most important but also to take advantage of them. This paper presents a novel method of feature subset selection specialized for dealing with the occurrence of feature drifts called Iterative Subset Selection (ISS), which splits the feature selection process into two stages by first ranking the features, and then iteratively selecting features from the ranking. Applying our feature selection method together with Naive Bayes or k-Nearest Neighbour as a classifier, results in compelling accuracy improvements, compared to prior work.}
 }
 
 @article{DBLP:journals/csur/GomesBEB17,
@@ -105,7 +173,8 @@
   doi       = {10.1145/3054925},
   timestamp = {Fri, 30 Nov 2018 12:48:46 +0100},
   biburl    = {https://dblp.org/rec/bib/journals/csur/GomesBEB17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Ensemble-based methods are among the most widely used techniques for data stream classification. Their popularity is attributable to their good performance in comparison to strong single learners while being relatively easy to deploy in real-world applications. Ensemble algorithms are especially useful for data stream learning as they can be integrated with drift detection algorithms and incorporate dynamic updates, such as selective removal or addition of classifiers. This work proposes a taxonomy for data stream ensemble learning as derived from reviewing over 60 algorithms. Important aspects such as combination, diversity, and dynamic updates, are thoroughly discussed. Additional contributions include a listing of popular open-source tools and a discussion about current data stream research challenges and how they relate to ensemble learning (big data streams, concept evolution, feature drifts, temporal dependencies, and others).}
 }
 
 @article{DBLP:journals/jss/BarddalGEP17,
@@ -123,7 +192,8 @@
   doi       = {10.1016/j.jss.2016.07.005},
   timestamp = {Tue, 06 Jun 2017 22:24:00 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/jss/BarddalGEP17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data stream mining is a fast growing research topic due to the ubiquity of data in several real-world problems. Given their ephemeral nature, data stream sources are expected to undergo changes in data distribution, a phenomenon called concept drift. This paper focuses on one specific type of drift that has not yet been thoroughly studied, namely feature drift. Feature drift occurs whenever a subset of features becomes, or ceases to be, relevant to the learning task; thus, learners must detect and adapt to these changes accordingly. We survey existing work on feature drift adaptation with both explicit and implicit approaches. Additionally, we benchmark several algorithms and a naive feature drift detection approach using synthetic and real-world datasets. The results from our experiments indicate the need for future research in this area as even naive approaches produced gains in accuracy while reducing resources usage. Finally, we state current research topics, challenges and future directions for feature drift adaptation.}
 }
 
 @article{DBLP:journals/ml/GomesBRBEPHA17,
@@ -145,7 +215,8 @@
   doi       = {10.1007/s10994-017-5642-8},
   timestamp = {Tue, 26 Jun 2018 14:09:25 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/ml/GomesBRBEPHA17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Random forests is currently one of the most used machine learning algorithms in the non-streaming (batch) setting. This preference is attributable to its high learning performance and low demands with respect to input preparation and hyper-parameter tuning. However, in the challenging context of evolving data streams, there is no random forests algorithm that can be considered state-of-the-art in comparison to bagging and boosting based algorithms. In this work, we present the adaptive random forest (ARF) algorithm for classification of evolving data streams. In contrast to previous attempts of replicating random forests for data stream learning, ARF includes an effective resampling method and adaptive operators that can cope with different types of concept drifts without complex optimizations for different data sets. We present experiments with a parallel implementation of ARF which has no degradation in terms of classification performance in comparison to a serial implementation, since trees and adaptive operators are independent from one another. Finally, we compare ARF with state-of-the-art algorithms in a traditional test-then-train evaluation and a novel delayed labelling evaluation, and show that ARF is accurate and uses a feasible amount of resources.}
 }
 
 @inproceedings{DBLP:conf/ictai/FerreiraBGE17,
@@ -164,7 +235,8 @@
   doi       = {10.1109/ICTAI.2017.00037},
   timestamp = {Tue, 31 Jul 2018 12:20:29 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/ictai/FerreiraBGE17},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Peer-to-peer (P2P) lending is a global trend of financial markets that allow individuals to obtain and concede loans without having financial institutions as a strong proxy. As many real-world applications, P2P lending presents an imbalanced characteristic, where the number of creditworthy loan requests is much larger than the number of non-creditworthy ones. In this work, we wrangle a real-world P2P lending data set from Lending Club, containing a large amount of data gathered from 2007 up to 2016. We analyze how supervised classification models and techniques to handle class imbalance impact creditworthiness prediction rates. Ensembles, cost-sensitive and sampling methods are combined and evaluated along logistic regression, decision tree, and bayesian learning schemes. Results show that, in average, sampling techniques outperform ensembles and cost sensitive approaches.}
 }
 
 @article{DBLP:journals/is/BarddalGEB16,
@@ -182,7 +254,8 @@
   doi       = {10.1016/j.is.2016.06.007},
   timestamp = {Tue, 06 Jun 2017 22:22:00 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/is/BarddalGEB16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data Stream Clustering is an active area of research which requires efficient algorithms capable of finding and updating clusters incrementally as data arrives. On top of that, due to the inherent evolving nature of data streams, it is expected that algorithms undergo both concept drifts and evolutions, which must be taken into account by the clustering algorithm, allowing incremental clustering updates. In this paper we present the Social Network Clusterer Stream+ (SNCStream+). SNCStream+ tackles the data stream clustering problem as a network formation and evolution problem, where instances and micro-clusters form clusters based on homophily. Our proposal has its parameters analyzed and it is evaluated in a broad set of problems against literature baselines. Results show that SNCStream+ achieves superior clustering quality (CMM), and feasible processing time and memory space usage when compared to the original SNCStream and other proposals of the literature.}
 }
 
 @inproceedings{DBLP:conf/icpr/BarddalGBE16,
@@ -200,7 +273,8 @@
   doi       = {10.1109/ICPR.2016.7899959},
   timestamp = {Wed, 24 May 2017 08:30:42 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/icpr/BarddalGBE16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {The ever increasing data generation confronts both practitioners and researchers on handling massive and sequentially generated amounts of information, the so-called data streams. In this context, a lot of effort has been put on the extraction of useful patterns from streaming scenarios. Learning from data streams embeds a variety of problems, and by far, the most challenging is concept drift, i.e. changes in data distribution. In this paper, we focus on a specific type of drift uncommonly assessed in the literature: feature drifts. Feature drifts occur whenever a subset of features becomes, or ceases to be, relevant to the concept to be learned. We propose and review several feature drifting data stream generators and use them to benchmark state-of-the-art data stream classification algorithms and their combination with drift detectors. Results show that, although drift detectors enable slight quicker recovery to feature drifts, best results are obtained by Hoeffding Adaptive Tree, the only learner that performs dynamic feature selection as streams progress.}
 }
 
 @inproceedings{DBLP:conf/icpr/BarddalGGBE16,
@@ -220,7 +294,8 @@
   doi       = {10.1109/ICPR.2016.7899960},
   timestamp = {Wed, 24 May 2017 08:30:48 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/icpr/BarddalGGBE16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Extracting useful knowledge from data streams is problematic, mainly due to changes in their data distribution, a phenomenon named concept drift. Recently, studies have shown that most of existing algorithms for learning from data streams do not encompass techniques for a specific kind of drift: feature drifts. Feature drifts occur when features become, or cease to be, relevant to the learning task. In this paper, we propose an extension to the k-nearest neighbor classifier, so its distances' computations are weighted according to their current discriminative power. On our proposal, the discriminative power of features is given by entropy, which is swiftly computed over a sliding window. Empirical evidence shows that our approach is able to overcome several existing algorithms in accuracy and feature drift adaptation, while at the expense of bounded processing time and memory space.}
 }
 
 @inproceedings{DBLP:conf/ijcnn/GranatyrBAEG16,
@@ -239,7 +314,8 @@
   doi       = {10.1109/IJCNN.2016.7727690},
   timestamp = {Fri, 26 May 2017 00:50:11 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/ijcnn/GranatyrBAEG16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Trust and reputation mechanisms are part of the logical protection of intelligent agents, preventing malicious agents from acting egotistically or with the intention to damage others. Several studies in Psychology, Neurology and Anthropology claim that emotions are part of human's decision making process. However, there is a lack of understanding about how affective aspects, such as emotions, influence trust or reputation levels of intelligent agents when they are inserted into an information exchange environment, e.g. an evaluation system. In this paper we propose a reputation model that accounts for emotional bounds given by Ekman's basic emotions and inductive machine learning. Our proposal is evaluated by extracting emotions from texts provided by two online human-fed evaluation systems. Empirical results show significant agent's utility improvements with p <; .05 when compared to non-emotion-wise proposals, thus, showing the need for future research in this area.}
 }
 
 @inproceedings{DBLP:conf/pkdd/BarddalGEPB16,
@@ -259,7 +335,8 @@
   doi       = {10.1007/978-3-319-46227-1\_9},
   timestamp = {Thu, 15 Jun 2017 21:40:02 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/pkdd/BarddalGEPB16},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {The ubiquity of data streams has been encouraging the development of new incremental and adaptive learning algorithms. Data stream learners must be fast, memory-bounded, but mainly, tailored to adapt to possible changes in the data distribution, a phenomenon named concept drift. Recently, several works have shown the impact of a so far nearly neglected type of drifcccct: feature drifts. Feature drifts occur whenever a subset of features becomes, or ceases to be, relevant to the learning task. In this paper we (i) provide insights into how the relevance of features can be tracked as a stream progresses according to information theoretical Symmetrical Uncertainty; and (ii) how it can be used to boost two learning schemes: Naive Bayesian and k-Nearest Neighbor. Furthermore, we investigate the usage of these two new dynamically weighted learners as prediction models in the leaves of the Hoeffding Adaptive Tree classifier. Results show improvements in accuracy (an average of 10.69 % for k-Nearest Neighbor, 6.23 % for Naive Bayes and 4.42 % for Hoeffding Adaptive Trees) in both synthetic and real-world datasets at the expense of a bounded increase in both memory consumption and processing time.}
 }
 
 @article{DBLP:journals/ijncr/BarddalGE15,
@@ -277,7 +354,8 @@
   doi       = {10.4018/ijncr.2015010102},
   timestamp = {Sun, 28 May 2017 13:18:05 +0200},
   biburl    = {https://dblp.org/rec/bib/journals/ijncr/BarddalGE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Mining data streams is one of the main studies in machine learning area due to its application in many knowledge areas. One of the major challenges on mining data streams is concept drift, which requires the learner to discard the current concept and adapt to a new one. Ensemble-based drift detection algorithms have been used successfully to the classification task but usually maintain a fixed size ensemble of learners running the risk of needlessly spending processing time and memory. In this paper the authors present improvements to the Scale-free Network Regressor (SFNR), a dynamic ensemble-based method for regression that employs social networks theory. In order to detect concept drifts SFNR uses the Adaptive Window (ADWIN) algorithm. Results show improvements in accuracy, especially in concept drift situations and better performance compared to other state-of-the-art algorithms in both real and synthetic data.}
 }
 
 @inproceedings{DBLP:conf/iceis/SouzaBGBE15,
@@ -297,7 +375,8 @@
   doi       = {10.5220/0005335700170024},
   timestamp = {Wed, 17 May 2017 10:54:49 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/iceis/SouzaBGBE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Traditional prediction algorithms assume that the underlying concept is stationary, i.e., no changes are expected to happen during the deployment of an algorithm that would render it obsolete. Although, for many real world scenarios changes in the data distribution, namely concept drifts, are expected to occur due to variations in the hidden context, e.g., new government regulations, climatic changes, or adversary adaptation. In this paper, we analyze the problem of predicting the most susceptible types of victims of crimes occurred in a large city of Brazil. It is expected that criminals change their victims' types to counter police methods and vice-versa. Therefore, the challenge is to obtain a model capable of adapting rapidly to the current preferred criminal victims, such that police resources can be allocated accordingly. In this type of problem the most appropriate learning models are provided by data stream mining, since the learning algorithms from this domain assume that concept drifts may occur over time, and are ready to adapt to them. In this paper we apply ensemble-based data stream methods, since they provide good accuracy and the ability to adapt to concept drifts. Results show that the application of these ensemble-based algorithms (Leveraging Bagging, SFNClassifier, ADWIN Bagging and Online Bagging) reach feasible accuracy for this task.}
 }
 
 @inproceedings{DBLP:conf/iconip/BarddalGE15,
@@ -314,7 +393,8 @@
   doi       = {10.1007/978-3-319-26532-2\_3},
   timestamp = {Sun, 08 Jul 2018 23:29:36 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/iconip/BarddalGE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Learning from data streams requires efficient algorithms capable of deriving a model accordingly to the arrival of new instances. Data streams are by definition unbounded sequences of data that are possibly non stationary, i.e. they may undergo changes in data distribution, phenomenon named concept drift. Concept drifts force streaming learning algorithms to detect and adapt to such changes in order to present feasible accuracy throughout time. Nonetheless, most of works presented in the literature do not account for a specific kind of drifts: feature drifts. Feature drifts occur whenever the relevance of an arbitrary attribute changes through time, also impacting the concept to be learned. In this paper we (i) verify the occurrence of feature drift in a publicly available dataset, (ii) present a synthetic data stream generator capable of performing feature drifts and (iii) analyze the impact of this type of drift in stream learning algorithms, enlightening that there is room and the need for dynamic feature selection strategies for data streams.}
 }
 
 @inproceedings{DBLP:conf/iconip/GomesCZBM15,
@@ -334,7 +414,8 @@
   doi       = {10.1007/978-3-319-26535-3\_58},
   timestamp = {Sun, 08 Jul 2018 23:29:36 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/iconip/GomesCZBM15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {The increased use of data mining algorithms reflects the need for automatic extraction of knowledge from large volumes of data. This work presents a temporal data mining algorithm that discovers frequent Association Rules from timestamped data. These rules are named Cause-Effect Rules, each represented by a multiset of unordered events (Cause) followed by a singleton event (Effect). Also, a Cause-Effect Rule is valid within an specific constraint that defines the minimum and maximum time distance between its Cause and Effect. Our algorithm was tested on a data set from two hospital emergency departments in Sherbrooke, QC, Canada.}
 }
 
 @inproceedings{DBLP:conf/iconip/BarddalGE15a,
@@ -351,7 +432,8 @@
   doi       = {10.1007/978-3-319-26532-2\_68},
   timestamp = {Sun, 08 Jul 2018 23:29:36 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/iconip/BarddalGE15a},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data stream mining is an active area of research that poses challenging research problems. In the latter years, a variety of data stream clustering algorithms have been proposed to perform unsupervised learning using a two-step framework. Additionally, dealing with non-stationary, unbounded data streams requires the development of algorithms capable of performing fast and incremental clustering addressing time and memory limitations without jeopardizing clustering quality. In this paper we present CNDenStream, a one-step data stream clustering algorithm capable of finding non-hyper-spherical clusters which, in opposition to other data stream clustering algorithms, is able to maintain updated clusters after the arrival of each instance by using a complex network construction and evolution model based on homophily. Empirical studies show that CNDenStream is able to surpass other algorithms in clustering quality and requires a feasible amount of resources when compared to other algorithms presented in the literature.}
 }
 
 @inproceedings{DBLP:conf/ictai/BarddalGE15,
@@ -368,7 +450,8 @@
   doi       = {10.1109/ICTAI.2015.150},
   timestamp = {Fri, 26 May 2017 00:51:05 +0200},
   biburl    = {https://dblp.org/rec/bib/conf/ictai/BarddalGE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data stream mining is a fast growing research topic due to the ubiquity of data in several real-world problems. Given their ephemeral nature, data stream sources are expected to undergo changes in data distribution, a phenomenon called concept drift. This paper focuses on one specific type of drift that has not yet been thoroughly studied, namely feature drift. Feature drift occurs whenever a subset of features becomes, or ceases to be, relevant to the learning task; thus, learners must detect and adapt to these changes accordingly. We survey existing work on feature drift adaptation with both explicit and implicit approaches. Additionally, we benchmark several algorithms and a naive feature drift detection approach using synthetic and real-world datasets. The results from our experiments indicate the need for future research in this area as even naive approaches produced gains in accuracy while reducing resources usage. Finally, we state current research topics, challenges and future directions for feature drift adaptation.}
 }
 
 @inproceedings{DBLP:conf/sac/BarddalGE15,
@@ -385,7 +468,8 @@
   doi       = {10.1145/2695664.2695674},
   timestamp = {Tue, 06 Nov 2018 11:06:47 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/sac/BarddalGE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {Data Stream Clustering is an active area of research which requires efficient algorithms capable of finding and updating clusters incrementally. On top of that, due to the inherent evolving nature of data streams, it is expected that these algorithms manage to quickly adapt to both concept drifts and the appearance and disappearance of clusters. Nevertheless, many of the developed two-step algorithms are only capable of finding hyper-spherical clusters and are highly dependant on parametrization. In this paper we introduce SNCStream, a one-step online clustering algorithm based on Social Networks Theory, which uses homophily to find non-hyper-spherical clusters. Our empirical studies show that SNCStream is able to surpass density-based algorithms in cluster quality and requires feasible amount of resources (time and memory) when compared to other algorithms.}
 }
 
 @inproceedings{DBLP:conf/sac/GomesBE15,
@@ -403,7 +487,8 @@
   doi       = {10.1145/2695664.2695754},
   timestamp = {Tue, 06 Nov 2018 11:06:46 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/sac/GomesBE15},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {This work presents two different voting strategies for ensemble learning on data streams based on pairwise combination of component classifiers. Despite efforts to build a diverse ensemble, there is always some degree of overlap between component classifiers models. Our voting strategies are aimed at using these overlaps to support ensemble prediction. We hypothesize that by combining pairs of classifiers it is possible to alleviate incorrect individual predictions that would otherwise negatively impact the overall ensemble decision. The first strategy, Pairwise Accuracy (PA), combines the shared accuracy estimation of all possible pairs in the ensemble, while the second strategy, Pairwise Patterns (PP), record patterns of pairwise decisions during training and use these patterns during prediction. We present empirical results comparing ensemble classifiers with their original voting methods and our proposed methods in both real and synthetic datasets, with and without concept drifts. Our analysis indicates that pairwise voting is able to enhance overall performance for PP, especially on real datasets, and that PA is useful whenever there are noticeable differences in accuracy estimates among ensemble members, which is common during concept drifts.}
 }
 
 @inproceedings{DBLP:conf/sac/BarddalGE14,
@@ -421,5 +506,6 @@
   doi       = {10.1145/2554850.2554855},
   timestamp = {Tue, 06 Nov 2018 11:06:48 +0100},
   biburl    = {https://dblp.org/rec/bib/conf/sac/BarddalGE14},
-  bibsource = {dblp computer science bibliography, https://dblp.org}
+  bibsource = {dblp computer science bibliography, https://dblp.org},
+  abstract  = {In this paper, we present a new ensemble method, the Scale-free Network Classifier (SFNClassifier), that is conceived as a dynamic sized scale-free network. In Data Stream Mining, ensemble-based approaches have been proposed to enhance accuracy and allow fast recovery from concept drift. However, these approaches are based on both update and polling heuristics that do not present good accuracy results in arbitrary domains and do not represent explicitly the similarity between classifiers. The representation of the ensemble as a network allows us to extract centrality metrics, which are used to perform a weighted majority vote, where the weight of a classifier is proportional to its centrality value. Based on empirical studies, we concluded that SFNClassifier has comparable results to other ensemble-learners in terms of accuracy and outperformed the other methods in processing time.}
 }
