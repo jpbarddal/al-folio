@@ -47,7 +47,8 @@ description: A brief version of my CV.
 <h3 class="year">Journal Refereeing</h3>
 
  &nbsp;
-
+ 
+ * IEEE Transactions on Cybernetics
  * Software: Practice and Experience
  * Theoretical Computer Science
  * Information Sciences

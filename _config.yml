@@ -87,7 +87,7 @@ plugins:
 # Jekyll-Scholar
 scholar:
 
-  last_name: Barddal
+  last_name: Paul Barddal
 
   style: apa
   locale: en
