@@ -19,6 +19,13 @@ description: A brief version of my CV.
 
 <h3 class="year">Experience</h3>
 &nbsp;
+* Pontifical Catholic University of Paraná (February 2019 - current)
+	* Professor and Researcher with the Graduate Program in Informatics (PPGIa)
+	* Lecturer with the Computer Science, Information Systems, and Software Engineering undergraduate courses
+
+* Advanced Institute for Artificial Intelligence (AI2)
+	* Researcher. The Advanced Institute for Artificial Intelligence (AI2) is a consortium of researchers committed to openness and inclusiveness that gathers together different experts in AI with a collaborative and constructive spirit to boldly attack challenging problems with high social and economic impact through the fundamental support of the private sector. More information about AI2 can be found [here](https://advancedinstitute.ai).
+
 * 4KST (October 2017 - current)
   * [Machine learning researcher and co-founder at 4KST](https://www.4kst.com).
 
@@ -47,7 +54,7 @@ description: A brief version of my CV.
 <h3 class="year">Journal Refereeing</h3>
 
  &nbsp;
- 
+
  * IEEE Transactions on Cybernetics
  * Software: Practice and Experience
  * Theoretical Computer Science
@@ -62,6 +69,30 @@ description: A brief version of my CV.
  * Knowledge and Information Systems
  * Future Generation Computer Systems - The International Journal of eScience
  * Computational Intelligence (Online)
+ * Springer Nature Applied Sciences
+ * Computer Applications in Engineering Education
+
+<h3 class="year">M.Sc. Advisorship</h3>
+&nbsp;
+* **Lucca Portes Cavalheiro** - Dynamic Classifier Selection for Data Stream Classification Ensembles - ongoing;
+* **Vinicios Coelho** - Class Imbalance in Data Stream Classification - ongoing;
+
+<!-- <h3 class="year">Ph.D. Advisorship</h3> -->
+<!-- &nbsp; -->
+
+<h3 class="year">M.Sc. Co-advisorship</h3>
+&nbsp;
+* **Rivaldo Tomio** - Big Data @ Renault - ongoing - collaboration with [Professor Eduardo Kugler Viegas](https://sites.google.com/view/eviegas/about-me);
+
+<!-- <h3 class="year">Ph.D. Co-advisorship</h3> -->
+<!-- &nbsp; -->
+
+<h3 class="year">Grants and Awards</h3>
+&nbsp;
+* Awarded with an M.Sc. grant via the Fundação Araucária/Renault call #06/2019 (R$ 33,600.00)
+* Awarded an NVIDIA Titan V GPU via the Accelerated Data Science program (2019).
+* Awarded with the **Marcelino Champagnat** academic merit prize with a GPA 9.6 out of 10.0 (2013)
+
 
 <h3 class="year">Programming Languages</h3>
 &nbsp;
@@ -73,11 +104,12 @@ description: A brief version of my CV.
 * Delphi / Pascal
 * Objective-C and Swift for iOS programming
 
-<h3 class="year">Other skills</h3>
+<h3 class="year">Other fun tools</h3>
 &nbsp;
 * Big Data: Hadoop setup, YARN, etc;
 * MapReduce Programming;
 * Apache Spark;
+* RAPIDS (cuDF and cuML);
 
 <h3 class="year">Relevant Links</h3>
 &nbsp;
