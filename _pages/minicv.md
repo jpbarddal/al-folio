@@ -87,11 +87,17 @@ description: A brief version of my CV.
 <!-- <h3 class="year">Ph.D. Co-advisorship</h3> -->
 <!-- &nbsp; -->
 
-<h3 class="year">Grants and Awards</h3>
+<h3 class="year">Awards</h3>
 &nbsp;
-* Awarded with an M.Sc. grant via the Fundação Araucária/Renault call #06/2019 (R$ 33,600.00)
-* Awarded an NVIDIA Titan V GPU via the Accelerated Data Science program (2019).
 * Awarded with the **Marcelino Champagnat** academic merit prize with a GPA 9.6 out of 10.0 (2013)
+* Awarded with the Excellence in Scientific Research - Q1 prize from the Pontifícia Universidade Católica do Paraná (2019)
+* Awareded with the 2019 paper with the biggest research impact in collaboration with Professor Fabrício Enembreck (2019)
+
+<h3 class="year">Grants</h3>
+&nbsp;
+* Granted with an M.Sc. grant via the Fundação Araucária/Renault call #06/2019 (R$ 33,600.00)
+* Granted with an NVIDIA Titan V GPU via the Accelerated Data Science program (2019).
+
 
 
 <h3 class="year">Programming Languages</h3>
