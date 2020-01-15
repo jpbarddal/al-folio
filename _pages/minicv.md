@@ -44,9 +44,9 @@ description: A brief version of my CV.
 <h3 class="year">Conference PC Membership</h3>
 &nbsp;
 &nbsp;
-* ACM Symposium on Applied Computing (ACM SAC). Years: 2019, 2018, 2017.
-* International Joint Conference on Artificial Intelligence (IJCAI). Years: 2019.
-* Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD). Years: 2019, 2018.
+* ACM Symposium on Applied Computing (ACM SAC). Years: 2020, 2019, 2018, 2017.
+* International Joint Conference on Artificial Intelligence (IJCAI). Years: 2020, 2019.
+* Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD). Years: 2020, 2019, 2018.
 * Asian Conference on Intelligent Information and Database Systems. Years: 2018.
 * FiCloud 2018 : The IEEE 6th International Conference on Future Internet of Things and Cloud. Years: 2018.
 * Large-scale Learning from Data Streams in Evolving Environments (LEARNSTREAM2017). Years: 2018.

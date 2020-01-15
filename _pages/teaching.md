@@ -6,6 +6,14 @@ description: A list of my teaching experience. If you're a student looking the a
 ---
 
 
+<h3 class="year">2020</h3>
+
+* Data Science - M.Sc. and Ph.D. degrees (PPGIa / PUCPR) - In collaboration with [Professor Carlos Silla Jr.](https://sites.google.com/site/carlossillajr/)
+* Advanced Topics in Computational Intelligence - M.Sc. and Ph.D. degrees (PPGIa / PUCPR) - In collaboration with [Professor Carlos Silla Jr.](https://sites.google.com/site/carlossillajr/)
+* Data Science - Computer Science Degree - 2nd semester (PUCPR)
+* Big Data - Computer Science Degree - 1st semester (PUCPR)
+* Algorithmic Reasoning (*Raciocínio Algorítmico*) - Computer Science degree - 1st semester (PUCPR)
+
 <h3 class="year">2019</h3>
 
 * Advanced Topics in Computational Intelligence - M.Sc. and Ph.D. degrees (PPGIa / PUCPR) - In collaboration with [Professor Carlos Silla Jr.](https://sites.google.com/site/carlossillajr/)
