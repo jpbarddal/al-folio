@@ -1,15 +1,268 @@
----
----
+@inproceedings{LUCCA1_IJCNN:2021,
+  author    = {Lucca Portes Cavalheiro and Jean Paul Barddal and Alceu de Souza Britto Jr. and Laurent Heutte},
+  title     = {Dynamically Selected Ensemble for Data Stream Classification},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  year      = {2021},
+  abstract  = {Mining data streams is a hot topic in the machine learning (ML) community.
+  In addition to learning and updating accurate models over time, these techniques must
+  respect constraints that are not necessarily as strong in batch mode, such as time processing
+  and memory consumption efficiency. A successful family of techniques in batch ML is dynamic
+  classifier selection (DCS). However, these are roughly overlooked in data stream mining.
+  In this paper, we propose a novel dynamic classifier selection framework for data streams
+  called Double Dynamic Classifier Selection (DDCS). We compare DDCS against state-of-art methods
+  for mining data streams in both synthetic and real-world datasets. Results depict that DDCS not
+  only outperforms the state-of-art ensemble methods for data stream classification in terms of
+  accuracy but is also significantly more efficient in terms of processing time and memory consumption.}
+}
+
+@inproceedings{LUCCA2_IJCNN:2021,
+  author    = {Lucca Portes Cavalheiro and Marco Antonio Alves Zanata and Jean Paul Barddal},
+  title     = {Towards the Overcome of Performance Pitfalls in Data Stream Mining Tools},
+  booktitle = {International Joint Conference on Neural Networks (IJCNN)},
+  year      = {2021},
+  abstract  = {Data stream mining is an essential task in today's scientific community.
+  It allows machine learning models to be updated over time as new data becomes available.
+  Three pillars should be accounted for when selecting an appropriate algorithm for data stream mining: accuracy, processing time, and memory consumption.
+  To develop and assess machine learning models in streaming scenarios, different tools have been developed, where the Massive Online Analysis, written in Java, and scikit-multiflow, written in Python, are in the spotlight.
+  Despite the ease of use of both tools, neither are focused on performance, which puts in jeopardy the usage of the computational resources.
+  In this paper, we show that with the right tools, Python libraries reach performance comparable to C/C++.
+  More specifically, we show how optimized implementations in scikit-multiflow using low-level languages, i.e., C++, C++ with Intel Intrinsics, and Rust; with bindings to Python vastly overcome existing tools in computational resources usage while keeping predictive performance intact.}
+}
+
+@inproceedings{DENISE:2021,
+  author    = {Denise Maria Vecino Sato and Jean Paul Barddal and Edson Emilio Scalabrin},
+  title     = {Interactive Process Drift Detection Framework},
+  booktitle = {International Conference on Artificial Intelligence and Soft Computing (ICAISC)},
+  year      = {2021},
+  abstract  = {This paper presents a novel tool for detecting drifts in process models.
+  The tool targets the challenge of defining the better parameter configuration for detecting
+  drifts by providing an interactive user interface. Using this interface, the user can quickly
+  change the parameters and verify how the process evolved. The process evolution is presented
+  in a timeline of process models, simulating a ``replay'' of models over time. One instantiation
+  of the framework was implemented using a fixed-size sliding window, discovering process maps
+  using directly-follows graphs (DFGs), and calculating nodes and edges similarities. This instantiation
+  was evaluated using a benchmarking dataset of simple and complex drift patterns. The tool correctly
+  detected 17 from the 18 change patterns, thus confirming its potential when an adequate window size
+  is set. The user interface shows that replaying the process models provides a visual understanding of
+  the changing process. The concept drift is explained by the similarity metrics' differences, thus
+  allowing drift localization. }
+}
+
+
+@article{ESWA_SUPERMARKET:2021,
+  year = {2021},
+  publisher = {Elsevier},
+  author = {Ant\^{o}nio David Viniski and Jean Paul Barddal and Alceu de Souza Britto Jr. and Fabricio Enembreck and Humberto Vinicius Aparecido de Campos},
+  title = {A case study of batch and incremental recommender systems in supermarket data under concept drifts and cold start},
+  journal = {Expert Systems with Applications},
+  abstract={Recommender systems uncover relationships between users and items, thus allowing personalized recommendations.
+            Nonetheless, users' preferences may change over time, the so-called concept drifts; or new users and items may appear,
+            making the recommender system unable to accurately map the relationship between users and items due to the cold start problem.
+            Consequently, concept drift and cold start are challenges that downgrade the recommender system’s predictive performance.
+            This paper assesses existing approaches for collaborative-filtering recommender systems over a real supermarket dataset that
+            exhibits both of the issues mentioned above.
+            For this purpose, our comparative analysis encompasses batch and streaming learning approaches.
+            As a result, we can observe that streaming-based models achieve better recommendation rates since these are tailored to fit the concept drift.
+            More specifically, the predictive performance of streaming-based recommendations increases by up to 21% over those provided by batch methods.
+            The supermarket dataset used in experimentation is also made publicly available for future studies and recommender systems comparisons.}
+}
+
+
+@inproceedings{BARDDAL_PAKDD:2021,
+  author    = {Antônio David Viniski and Jean Paul Barddal and Alceu de Souza Britto Jr.},
+  title     = {UKIRF: An Item Rejection Framework for Improving Negative Items Sampling in One-Class Collaborative Filtering},
+  booktitle = {Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)},
+  year      = {2021},
+  abstract  = {Collaborative Filtering (CF) is one of the most successful techniques in recommender systems.
+               Most CF scenarios depict positive-only implicit feedback, which means that negative feedback is unavailable.
+               Therefore, One-Class Collaborative Filtering (OCCF) techniques have been tailored to tackling these scenarios.
+               Nonetheless, several OCCF models still require negative observations during training, and thus, a popular approach
+               is to consider randomly selected unknown relationships as negative.
+               In this work, we bring forward a novel approach for selecting negative items called Unknown Item Rejection Framework (UKIRF).
+               More specifically, we instantiate UKIRF using similarity approaches, i.e., TF-IDF and Cosine, to reject items that are similar
+               to those a user interacted with. We apply UKIRF to different OCCF models in different datasets and show that it improves the
+               recall rates up to 24% when compared to random sampling. }
+}
+
+
+@inproceedings{BARDDAL_ICPR:2021,
+  author    = {Marcos Monteiro and Alceu de Souza Britto Jr and Jean Paul Barddal and Luiz Soares Oliveira and Robert Sabourin},
+  title     = {Classifier Pool Generation based on a Two-level Diversity Approach},
+  booktitle = {International Conference on Pattern Recognition (ICPR)},
+  year      = {2021},
+  abstract  = {This paper describes a classifier pool generation method
+  guided by the diversity estimated on the data complexity and classifier
+  decisions. First, the behavior of complexity measures is assessed by
+  considering several subsamples of the dataset. The complexity measures
+  with high variability across the subsamples are selected for posterior
+  pool adaptation, where an evolutionary algorithm optimizes diversity in
+  both complexity and decision spaces. A robust experimental protocol with
+  28 datasets and 20 replications is used to evaluate the proposed method.
+  Results show significant accuracy improvements in 69.4\% of the experiments
+  when Dynamic Classifier Selection and Dynamic Ensemble Selection methods
+  are applied.  }
+}
+
+@inproceedings{BARDDAL_SMC1_2020,
+  author    = {Jean Paul Barddal, Fabricio Enembreck, Lucas Loezer, and Riccardo Lanzuolo},
+  title     = {Combining Slow and Fast Learning for Improved Credit Scoring  },
+  booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (IEEE SMC)},
+  year      = {2020},
+  abstract  = {The financial credibility of a person is a relevant factor
+to determine whether a loan should be approved or not, and
+it is quantified by a credit score, which is computed using
+past performance on debt obligations, profiling, and other
+data available.
+Credit scoring becomes even a hotter topic in emerging
+countries, as interest rates and customer behavior swiftly
+vary, given the economic (in)stability of the country and
+as fintechs are chasing robust solutions for improved
+credit scoring solutions.
+Batch machine learning is often deployed for credit
+scoring, yet, they are tailored for static scenarios, i.e.,
+they are not prepared to swiftly detect and adapt to
+changes in customer behavior, thus leading to slow recovery
+in such scenarios.
+In this paper, we bring forward an analysis on how batch
+machine learning can be combined with data stream mining
+techniques, thus leading to better recognition rates in
+credit scoring scenarios.
+We analyze three different real-world datasets from
+Brazilian financial institutions, whilst keeping their
+secrecy preserved, and show how batch and stream learning
+can be combined towards improved credit scoring systems, as
+well as highlighting relevant gaps that still require
+attention.  }
+}
+
+@inproceedings{BARDDAL_SMC2_2020,
+  author    = {Paulo Ricardo Lisboa de Almeida, Luiz Oliveira, Alceu Souza Britto Jr, and Jean Paul Barddal},
+  title     = {Naïve Approaches to Deal with Concept Drifts },
+  booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (IEEE SMC)},
+  year      = {2020},
+  abstract  = {A common problem in machine learning is to find
+representative real-world problems to put the methods to
+test. When developing approaches to deal with concept
+drifts, some datasets such as the Forest Covertype and
+Nebraska Weather are a common choice for testing. We argue
+that some well-known real-world concept drift datasets
+present a high serial dependence in the target class and
+may have only minor changes. With this in mind, we propose
+the use of naïve methods that should be used for
+comparison with methods that deal with concept drifts. The
+experimental results using six real-world well-known
+concept drift datasets show that the naïve
+approaches can be better than some methods to deal with
+possible concept drifts in datasets such as the Forest
+Covertype, Electricity, and Nebraska Weather. These results
+suggest that some widely used datasets may be trivial from
+the concept drift standpoint, and thus, should be avoided
+or at least the results should be compared with the
+proposed naïve methods.}
+}
+
+@inproceedings{BARDDAL_SMC3_2020,
+  author    = {Marcos Alberto Mochinski, Jean Paul Barddal, and Fabricio Enembreck},
+  title     = {Improving Multiple Time Series Forecasting with Data Stream Mining Algorithms  },
+  booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (IEEE SMC)},
+  year      = {2020},
+  abstract  = {This paper proposes a hybrid ensemble learning approach
+that combines statistical and data stream mining algorithms
+to obtain better forecasting performance in multiple time
+series prediction problems. Although some multiple time
+series algorithms perform surprisingly well in a variety of
+domains, it is well-known that no one is dominant for every
+existent domain. Therefore, we developed a meta-technique
+based on data stream mining and static ensemble selection
+strategy and evaluated its forecasting goodness-of-fit in
+time series datasets from M3 and M4 competitions. After
+training different regression models, we show how the
+combination of auto.arima and AdaGrad lead to improved
+forecasting rates, thus surpassing the results of
+state-of-art algorithms.}
+}
+
+@inproceedings{BARDDAL_SMC4_2020,
+  author    = {Eduardo Ferreira José, Fabricio Enembreck, and Jean Paul Barddal},
+  title     = {{ADADRIFT}: An Adaptive Learning Technique for Long-History Stream-Based Recommender Systems  },
+  booktitle = {IEEE International Conference on Systems, Man, and Cybernetics (IEEE SMC)},
+  year      = {2020},
+  abstract  = {Adaptive recommender systems are increasingly showing their
+importance as profiling is a dynamic problem. Their goal is
+to update recommendation models as new interactions take
+place, thus swiftly adapting to drifts in the user’s
+behavior and desires, and item’s audience. However,
+existing recommendation algorithms usually do not perform
+well during drifts, as they take long to adapt to changes,
+or these updates are suboptimal since they account for all
+profiles’ preferences equally, which is often untrue as
+each individual and its changes are unique. In this paper,
+we propose the ADADRIFT algorithm to deal with user and
+item-based drifts in adaptive recommender systems using
+personalized learning rates based on profile statistics.
+The experiments using stream-based recommender systems
+(ISGD and BRISMF) across four different datasets show that
+ADADRIFT surpasses ADADELTA with significant improvements
+in recommendation rates. The best results appear when the
+data streams have a long history of the users’ or items’
+interactions and drifts become noticeable. The
+experimentation in this work highlight the importance of
+handling drifts in recommender systems. }
+}
+
+
+@article{BARDDAL_LESSONS_LEARNED:2020,
+title = "Lessons learned from data stream classification applied to credit scoring",
+journal = "Expert Systems with Applications",
+pages = "113899",
+year = "2020",
+issn = "0957-4174",
+doi = "https://doi.org/10.1016/j.eswa.2020.113899",
+url = "http://www.sciencedirect.com/science/article/pii/S0957417420306928",
+author = "Jean Paul Barddal and Lucas Loezer and Fabrício Enembreck and Riccardo Lanzuolo",
+keywords = "Credit scoring, Machine learning datasets, Data stream classification",
+abstract = "The financial credibility of a person is a factor used to determine whether a loan should be approved or not, and this is quantified by a ‘credit score,’ which is calculated using a variety of factors, including past performance on debt obligations, profiling, amongst others. Machine learning has been widely applied to automate the development of effective credit scoring models over the years. Yet, studies show that the development of robust credit scoring models may take longer than a year, and thus, if the behavior of customers changes over time, the model will be outdated even before its deployment. In this paper, we made 3 anonymized real-world credit scoring datasets available alongside the results obtained. In each of these datasets, we verify whether the credit scoring task should be thought as an ephemeral scenario since many of the variables may drift over time, and thus, data stream mining techniques should be used since they were tailored for incremental learning and to detect and adapt to changes in the data distribution. Therefore, we compare both traditional batch machine learning algorithms with data stream algorithms in different validation schemes using both Kolmogorov–Smirnov and Population Stability Index metrics. Furthermore, we also provide insights on the importance of features according to their Information Value, Mean Decrease Impurity, and Mean Positional Gain metrics, such that the last depicts changes in the importance of features over time. For 2 of the 3 tested datasets, the results obtained by data stream learners are comparable to predictive models currently in use, thus showing the efficiency of data stream classification for the credit scoring task."
+}
+
+
+@article{Barddal_Enembreck:2020,
+  year = {2020},
+  publisher = {Springer},
+  author = {Jean Paul Barddal and Fabricio Enembreck},
+  title = {Regularized and incremental decision trees for data streams},
+  journal = {Annals of Telecommunications},
+  abstract={Decision trees are a widely used family of methods for learning predictive models from both batch and streaming data. Despite depicting positive results in a multitude of applications, incremental decision trees continuously grow in terms of nodes as new data becomes available, i.e., they eventually split on all features available, and also multiple times using the same feature; thus leading to unnecessary complexity and overfitting. With this behavior, incremental trees lose the ability to generalize well, be human-understandable and computationally efficient. To tackle these issues, we proposed in a previous study a regularization scheme for Hoeffding decision trees that: (i) uses a penalty factor to control the gain obtained by creating a new split node using a feature that has not been used thus far; and (ii) uses information from previous splits in the current branch to determine whether the gain observed indeed justifies a new split. In this paper, we extend this analysis and apply the proposed regularization scheme to other types of incremental decision trees and report the results in both synthetic and real-world scenarios. The main interest is to verify whether and how the proposed regularization scheme affects the different types of incremental trees. Results show that in addition to the original Hoeffding Tree, the Adaptive Random Forest also benefits from regularization, yet, McDiarmid Trees and Extremely Fast Decision trees observe declines in accuracy.}
+}
+
+
+@inproceedings{Hochuli2020,
+  author    = {Andr\'{e} Gustavo Hochuli and Alceu de Souza Britto Jr. and Jean Paul Barddal and Luiz Eduardo Soares Oliveira and Robert Sabourin},
+  title     = {An End-to-End Approach for Recognition of Modern and Historical Handwritten Numeral Strings},
+  booktitle = {Proceedings of the 2020 International Joint Conference on Neural Networks (IJCNN)
+               Glasgow, Scotland},
+  year      = {2020},
+  abstract = {An end-to-end solution for handwritten numeral string recognition is proposed, in which the numeral string is considered as composed of objects automatically detected and recognized by a YoLo-based model. The main contribution of this paper is to avoid heuristic-based methods for string preprocessing and segmentation, the need for task-oriented classifiers, and also the use of specific constraints related to the string length. A robust experimental protocol based on several numeral string datasets, including one composed of historical documents, has shown that the proposed method is a feasible end-to-end solution for numeral string recognition. Besides, it reduces the complexity of the string recognition task considerably since it drops out classical steps, in special preprocessing, segmentation, and a set of classifiers devoted to strings with a specific length.}
+}
+
+
+@inproceedings{Loezer2020,
+  author    = {Lucas Loezer and Fabricio Enembreck and Jean Paul Barddal and Alceu de Souza Britto Jr.},
+  title     = {Cost-sensitive learning for imbalanced data streams},
+  booktitle = {Proceedings of the 34rd Annual {ACM} Symposium on Applied Computing,
+               {SAC} 2020, Brno, Czech Republic, March 30 - April 3, 2020},
+  year      = {2020},
+  abstract = {The data imbalance problem hampers the classification task. In streaming environments, this becomes even more cumbersome as the proportion of classes can vary over time. Approaches based on misclassification costs can be used to mitigate this problem. In this paper, we present the Cost-sensitive Adaptive Random Forest (CSARF) and compare it to the Adaptive Random Forest (ARF) and ARF with Resampling (ARF$_{RE}$) in six real-world and six synthetic data sets with different class ratios. The empirical study analyzes two misclassification costs strategies of the CSARF and shows that the CSARF obtained statistically superior w.r.t. the average recall and average F1 when compared to ARF.}
+}
 
 @article{Obladen2019,
   url = {http://buscalegis.ufsc.br/revistas/index.php/observatoriodoegov/article/view/314},
-  year = {2019},
-  month = dec,
+  year = {2020},
+  month = jan,
   volume = {1},
   number = {18},
   pages = {107--126},
   author = {Cinthia Obladen de Almendra Freitas and Jean Paul Barddal},
-  title = {ANÁLISE PREDITIVA E DECISÕES JUDICIAIS: controvérsia ou realidade?},
+  title = {AN\'{A}LISE PREDITIVA E DECIS\~{O}ES JUDICIAIS: controvérsia ou realidade?},
   journal = {Revista Democracia Digital e Governo Eletrônico},
   abstract={In this paper, we provide an overview of how Data Analytics, Big Data, and Machine Learning may assist the judicial system by providing insightful information to citizens, police, lawyers, and judges, in a fast and accurate way. We conduct a bidirectional analysis between Law and Predictive Analytics applying the deductive method and bibliographic technique. We report concerns that Law should have with the application of computational techniques in different scenarios, mainly in the judicial system. Finally, we bring forward controversies between these areas, such as the new companies that target the use of personal and sensitive data in Law applications, and how these are potentially hurting fundamental rights and leading to biases in critical systems, wuch as predictive systems for crime recidivism.}
 }
@@ -273,7 +526,7 @@ abstract = "Feature selection targets the identification of which features of a 
                Heitor Murilo Gomes and
                Fabr{\'{\i}}cio Enembreck and
                Jean{-}Paul A. Barth{\`{e}}s},
-  title     = {SNCStream\({}^{\mbox{+}}\): Extending a high quality true anytime
+  title     = {SNCStream+: Extending a high quality true anytime
                data stream clustering algorithm},
   journal   = {Inf. Syst.},
   volume    = {62},

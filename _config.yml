@@ -11,7 +11,7 @@ footer_text: >
 
 url:  https://www.ppgia.pucpr.br/ # the base hostname & protocol for your site
 baseurl: /~jean.barddal # the subpath of your site, e.g. /blog/
-last_updated: 07-Mar-2019 # leave blank if you don't want to display last updated
+last_updated: # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
 # Social integration
